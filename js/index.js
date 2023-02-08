@@ -14,7 +14,7 @@ for (let i = 0; i < albums.length; i++) {
     <div class="card">
         <img src="${album.img}" alt="" class="card-top-img">
         <div class="card-body">
-            <a href="/album.html?i=${i}" class="card-title">${album.title}</a>
+            <a href="/music-app/album.html?i=${i}" class="card-title">${album.title}</a>
             <div class="album-fav">
                 <img src="assets/icons8-favorite-48.png" alt="" class="fav-img">
                 <span class="numfav">
