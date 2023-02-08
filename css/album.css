@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.album-info {
+    display: flex;
+    margin-top: 40px;
+    height: 256px;
+}
+
+.album-info img {
+    width: 256px;
+    height: 256px;
+}
+
+.album-text {
+    margin-left: 20px;
+}
+
+.album-char {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album-type {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 700;
+}
+
+.album-time {
+    color: gray;
+}
+
+.album-title {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.album-desc {
+    margin-top: 10px;
+}
+
+.album-change {
+    margin-top: 10px;
+    color: gray;
+}
+
+.bold {
+    font-weight: 600;
+    color: black;
+}
+
+.album-btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.album-play {
+    color: black;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(255, 213, 0);
+    border: none;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.album-play img {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.album-fav {
+    padding: 10px;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.album-fav img {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.album-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.album-form img {
+    width: 32px;
+    height: 32px;
+    filter: opacity(50%);
+}
+
+.album-search {
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.album-tracks {
+    padding-bottom: 50px;
+}
+
+/* Track */
+.track {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.track-img {
+    width: 64px;
+    height: 64px;
+}
+
+.track-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.track-name {
+    font-weight: 600;
+}
+
+.track-author {
+    color: gray;
+}
+
+.feat {
+    color: gray;
+    font-weight: 500;
+}
+
+.track-fav {
+    width: 32px;
+    height: 32px;
+    filter: opacity(40%);
+}
+
+.track-end-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.track-img-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.track-time {
+    margin-left: 20px;
+    color: gray;
+}

@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    transition: all .2s;
+}
+
+/* Container */
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+/* --------- */
+
+header {
+    padding-top: 24px;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-link {
+    color: #000;
+    text-decoration: none;
+    padding-left: 25px;
+    font-weight: 500;
+    transition: color .2s;
+}
+
+.menu-link:hover, .menu-link:focus {
+    color: red;
+}
+
+.active {
+    font-weight: 700;
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 29px;
+}
+
+.header-profile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-profile:hover, .header-profile:focus {
+    cursor: pointer;
+}
+
+.header-search {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    border: 1px solid gray;
+    border-radius: 15px;
+    transition: all .2s;
+}
+
+.header-search:focus {
+    border: none;
+    outline: 6px solid #ff7e7e;
+}
+
+.plus-badge {
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    padding: 3px 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.header-profile img {
+    border-radius: 50%;
+    outline: 2px solid red;
+    outline-offset: 3px;
+}
+
+header hr {
+    margin-top: 15px;
+}
+
+.dropdown-profile {
+    width: 128px;
+    padding: 20px 25px;
+    box-shadow: 0 0 7px black;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 100;
+    top: 75px;
+    right: 70px;
+    background-color: white;
+}
+
+.d-none {
+    display: none;
+}
+
+.profile-button {
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+}
+
+.dark-btn {
+    text-decoration: none;
+    color: black;
+}
+
+.exit {
+    color: red;
+    font-weight: 600;
+}
+
+.dropdown-hr-2 {
+    opacity: 0%;
+}
