@@ -55,8 +55,66 @@ if (!album) {
                 </div>
             </div>
             <div class="track-end-info">
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
                 <span class="track-time">${track.time}</span>
             </div>
+            <audio class="audio" src="${track.src}"></audio>
         </div>`;
     };
 }
+
+let tracksAudio = document.querySelectorAll(`.track`);
+let isPlaying = false;
+
+playlist.addEventListener(`click`, function(evt){
+    let trackAudio = evt.target.closest(`.track`);
+    let audio = trackAudio.querySelector(`.audio`);
+    let trackTime = trackAudio.querySelector(`.track-time`);
+    let progressBar = trackAudio.querySelector(`.progress-bar`);
+
+    function updateProcess() {
+        let time = Math.round(audio.currentTime);
+        let minutes = Math.floor(time / 60);
+        let seconds = Math.floor(time - minutes * 60);
+        let minutesVal = minutes;
+        let secondsVal = seconds;
+        
+        if (minutes < 10) {
+            minutesVal = `0${minutes}`;
+        }
+        if (seconds < 10) {
+            secondsVal =`0${seconds}`;
+        }
+
+        trackTime.innerHTML = `${minutesVal}:${secondsVal}`;
+
+        if (isPlaying) {
+            requestAnimationFrame(updateProcess);
+        }
+    }
+
+    function updateBar () {
+        let duration = audio.duration;
+        let time = audio.currentTime;
+
+
+        progressBar.style.width = `${(time * 100) / duration}%`;
+
+        if (isPlaying) {
+            requestAnimationFrame(updateBar);
+        }
+    }
+
+    if(isPlaying) {
+        isPlaying = false;
+        audio.pause();
+    } else {
+        isPlaying = true;
+        audio.play();
+        updateProcess();
+        updateBar();
+    }
+});
+
